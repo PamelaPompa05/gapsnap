@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /*Font: Montserrat*/
+
+.FAQ {
+    padding-bottom: 30px; /* Adjust value as needed */
+    font-family: "Montserrat";
+}
+
+.faq-item {
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 500px;
+    overflow: hidden;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    max-width: 1100px; /* Limits width */
+    margin: auto; /* Centers FAQ items */
+}
+
+.FAQ h2{
+    text-align: center;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s ease;
+    border-bottom-left-radius: 7px; /* Rounded bottom to connect */
+    border-bottom-right-radius: 7px;
+}
+
+.faq-question:hover {
+    background-color:  #FFBF00;
+}
+
+.arrow {
+    transition: transform 0.4s ease;
+}
+
+/* Rotate arrow when active */
+.faq-item.active .arrow {
+    transform: rotate(90deg);
+}
+
+.faq-answer {
+    overflow: hidden;
+    transform-origin: top;
+    background-color: #CDD6E0;
+    color: black;
+    border-radius: 0 0 15px 15px;
+    padding: 0px 18px; /* Only horizontal padding for collapsed state */
+    transition: max-height 0.5s ease, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
+    margin-top: -3px;
+}
+
+.faq-item.active .faq-answer {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.faq-item:not(.active) .faq-answer {
+    padding: 0px 18px; /* Shrinks padding smoothly instead of disappearing instantly */
+}

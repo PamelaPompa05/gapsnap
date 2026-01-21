@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /*Font: Montserrat*/
+
+.section-divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, #FFBF00, #FFCC33); /* Dark to golden gradient */
+  margin: 40px 0px; /* Adds spacing around the divider */
+}

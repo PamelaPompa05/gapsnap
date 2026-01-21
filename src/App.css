@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /*Font: Montserrat*/
+
 .App {
   text-align: center;
+}
+
+body {
+  background-image: radial-gradient(circle, white, #FFF6EB, #D0E4F7);
+  background-size: cover; /* Ensure the gradient covers the whole page */
+  background-repeat: no-repeat; /* Prevent the gradient from repeating */
+  color: black; /* Optional: Changes text color for better visibility */
+  margin: 0;
+  padding: 0px;
+  font-family: 'Montserrat', serif
 }
 
 .App-logo {
@@ -13,14 +25,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header { /*for the home page*/
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column; /* Ensure vertical alignment */
+  align-items: flex-start; /* Align items to the start by default */
+  margin-right: 40px; /* Move the content to the right */
+  margin-top: 10px; 
   color: white;
 }
 
