@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Home.css"; // Ensure you have this CSS file
 import FAQ from "../components/FAQ.jsx"; 
-import intro_image from  '../images/group_image.jpeg'
+import gapsnap_introduction from  '../images/group_image.jpeg'
 
 const Home = () => {
 
@@ -18,7 +18,7 @@ const Home = () => {
 
                 {/* Right Half - Image Section */}
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
-                    <img src={intro_image} alt="intro image" style={{ width: '100%', maxWidth: '500px', height: 'auto', borderRadius: '10px' }} />
+                    <img src={gapsnap_introduction} alt="gapsnap_introduction" style={{ width: '100%', maxWidth: '500px', height: 'auto', borderRadius: '10px' }} />
                 </div>
             </div>
 

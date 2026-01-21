@@ -1,6 +1,12 @@
 import "../styles/Footer.css"; // Ensure you have this CSS file
 
 {/*To import images later: import discordIcon from '../images/discord-icon.png';*/}
+{/*This is to add images later:
+                <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end', marginTop: '5px' }}>
+                    <a href="https://discord.gg/NKqXFXk5Rv" target="_blank" rel="noopener noreferrer">
+                        <img src={discordIcon} alt="Discord" style={{ width: '40px', height: '40px' }} />
+                    </a>
+                </div>*/}
 
 const Footer = () => {
     return (
@@ -13,14 +19,8 @@ const Footer = () => {
 
             {/* Right side - Contact Us */}
             <div style={{ alignItems: 'center', textAlign: 'center', marginRight: '100px', display: 'flex', flexDirection: 'column', marginBottom: '5px' }}>
-            <h3 style={{ marginBottom: '3px', fontSize: '22px' }}>Contact Us</h3>
-            <p style={{ fontSize: '16px', marginTop: '0px', marginBottom: '2px' }}>eoye@ucdavis.edu</p>
-                {/*This is to add images later:
-                <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end', marginTop: '5px' }}>
-                    <a href="https://discord.gg/NKqXFXk5Rv" target="_blank" rel="noopener noreferrer">
-                        <img src={discordIcon} alt="Discord" style={{ width: '40px', height: '40px' }} />
-                    </a>
-                </div>*/}
+                <h3 style={{ marginBottom: '3px', fontSize: '22px' }}>Contact Us</h3>
+                <p style={{ fontSize: '16px', marginTop: '0px', marginBottom: '2px' }}>eoye@ucdavis.edu</p>
             </div>
         </footer>
     );
