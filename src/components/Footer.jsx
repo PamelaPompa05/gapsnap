@@ -1,12 +1,12 @@
 import "../styles/Footer.css"; // Ensure you have this CSS file
 
-{/*To import images later: import discordIcon from '../images/discord-icon.png';*/}
-{/*This is to add images later:
+/*To import images later: import discordIcon from '../images/discord-icon.png';*/
+/*This is to add images later:
                 <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end', marginTop: '5px' }}>
                     <a href="https://discord.gg/NKqXFXk5Rv" target="_blank" rel="noopener noreferrer">
                         <img src={discordIcon} alt="Discord" style={{ width: '40px', height: '40px' }} />
                     </a>
-                </div>*/}
+                </div>*/
 
 const Footer = () => {
     return (
