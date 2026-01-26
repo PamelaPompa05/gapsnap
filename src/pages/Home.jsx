@@ -12,7 +12,7 @@ const Home = () => {
                 {/* Left Half - Text Section */}
                 <div className="home" style={{ flex: 1, textAlign: 'left'}}>
                     <h1 style={{ textAlign: 'center', fontSize: "3.7rem", fontWeight: "bold" }}>GapSnap</h1>
-                    <p style={{ textAlign: 'center', fontSize: "2rem", padding: '0px', maxWidth: '1200px'}}>GapSnap is a diagnostic tool for grades 3-8 that identifies why students struggle
+                    <p style={{ textAlign: 'center', fontSize: "2rem", padding: '0px', maxWidth: '1200px'}}>GapSnap is a diagnostic tool for grades 4-8 that identifies why students struggle
                     in math by analyzing error patterns, cognitive processes, and language demands, not just correctness.</p>
                 </div>
 

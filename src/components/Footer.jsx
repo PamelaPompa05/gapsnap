@@ -20,7 +20,7 @@ const Footer = () => {
             {/* Right side - Contact Us */}
             <div style={{ alignItems: 'center', textAlign: 'center', marginRight: '100px', display: 'flex', flexDirection: 'column', marginBottom: '5px' }}>
                 <h3 style={{ marginBottom: '3px', fontSize: '22px' }}>Contact Us</h3>
-                <p style={{ fontSize: '16px', marginTop: '0px', marginBottom: '2px' }}>eoye@ucdavis.edu</p>
+                <p style={{ fontSize: '16px', marginTop: '0px', marginBottom: '2px' }}>gapsnapdiagnostic@gmail.com</p>
             </div>
         </footer>
     );
