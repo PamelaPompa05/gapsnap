@@ -33,8 +33,7 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = () => {
     const faqData = [
-        { question: "What is GapSnap's Mission?", answer: "GapSnap's Mission is to..." },
-        { question: "Question....", answer: "lalalala"}
+        { question: "What is GapSnap's Mission?", answer: "GapSnap aims to uncover misconceptions, cognitive load issues, and language barriers, in order to empower educators to deliver targeted, equitable instruction that accelerates learning for every student." },
     ];
 
     return (

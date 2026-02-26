@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Prototype from "./pages/Prototype";
+import Platform from "./pages/Platform";
 import './App.css';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         
          <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/prototype" element={<Prototype />} />
+          <Route path="/platform" element={<Platform />} />
         </Routes>
         <Footer />
       </div>
