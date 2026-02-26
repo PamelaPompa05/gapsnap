@@ -26,15 +26,11 @@ const Home = () => {
 
             {/*Link to Get Access*/}
             <hr className="section-divider" />
-            <div className="get-access-section" style={{ textAlign: 'center', padding: '20px', paddingBottom: '40px', backgroundColor: '#d9eaf8ff', borderRadius: '5px', margin: '0 300px' }}>
+            <div className="get-access-section" style={{ textAlign: 'center', padding: '20px', paddingBottom: '40px', backgroundColor: '#d9eaf8ff', borderRadius: '5px', margin: '0 300px', marginBottom: '50px' }}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Click here to sign up for the pilot!</h2>
                 <button onClick={() => window.open('https://docs.google.com/forms/u/1/d/e/1FAIpQLSd9FHCeqI-L-W8r-NWKpRE5EgKR5twvfeoOZUklBATKroXf2A/viewform?usp=publish-editor&urp=gmail_link', '_blank')} style={{ backgroundColor: '#000b2fff', color: 'white', border: 'none', padding: '1rem 2rem', fontSize: '1.2rem', borderRadius: '5px', cursor: 'pointer' }} > Get Access </button>
             </div>
 
-            {/*FAQ section*/}
-            <div class="FAQ">
-                <FAQ />
-            </div>
         </div>
     );
 };

@@ -16,7 +16,7 @@ const Platform = () => {
             {/*How it Works/*/}
                 <hr className="section-divider" />
 
-                <div className="banner-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+                <div className="banner-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px'}}>
                     <div style={{ maxWidth: "1000px", textAlign: "center" }}>
                         <h1 style={{ textAlign: 'center', fontSize: "2.6rem", fontWeight: "bold" }}>How GapSnap Works</h1>
                         <p style={{ textAlign: 'center', fontSize: "1.6rem", padding: '0px'}}>GapSnap operates as a complete diagnostic engine from assessment to instructional action.
