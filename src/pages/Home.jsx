@@ -1,6 +1,4 @@
-import React from "react";
 import "../styles/Home.css"; // Ensure you have this CSS file
-import FAQ from "../components/FAQ.jsx"; 
 import gapsnap_introduction from  '../images/group_image.jpeg'
 
 const Home = () => {
