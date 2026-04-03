@@ -6,23 +6,12 @@
 
 body {
   background-image: radial-gradient(circle, white, #FFF6EB, #D0E4F7);
-  background-size: cover; /* Ensure the gradient covers the whole page */
+  background-size: 100% 100%; /*used to be cover*/
   background-repeat: no-repeat; /* Prevent the gradient from repeating */
   color: black; /* Optional: Changes text color for better visibility */
   margin: 0;
   padding: 0px;
   font-family: 'Montserrat', serif
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header { /*for the home page*/
@@ -34,15 +23,108 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page {
+  min-height: 100vh; /* or 100vh for full-page layout */
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, #FFBF00, #FFCC33); /* Dark to golden gradient */
+  margin: 40px 0px; /* Adds spacing around the divider */
+}
+
+.btn-primary {
+  background-color: #000b2fff;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00104aff;
+}
+
+.btn-small {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+/* Centers content horizontally with consistent padding */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0; /* remove vertical padding */
+}
+
+/* Controls max width and centers text inside the banner */
+.banner-inner {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.bottom-section {
+  margin-top: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.bottom-section .banner-inner {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Shared paragraph styling */
+.section-paragraph {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0 auto 1rem auto;
+  line-height: normal; 
+  max-width: 1000px;
+}
+
+/* Shared section title styling */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Image wrapper to center images */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Image styling */
+.section-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+math-field[read-only] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-size: 1.5rem;
+  font-weight: 540;
+}
+
+math-field[read-only]::part(content) {
+  caret-color: transparent;
 }

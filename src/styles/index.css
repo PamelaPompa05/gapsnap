@@ -1,0 +1,14 @@
+/* Hide the raw LaTeX editor */
+.ML__latex {
+  display: none !important;
+}
+
+/* Hide the keyboard toggle button */
+.ML__keyboard-toggle {
+  display: none !important;
+}
+
+/* Hide the menu button */
+.ML__menu-toggle {
+  display: none !important;
+}

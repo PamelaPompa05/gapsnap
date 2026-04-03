@@ -1,4 +1,5 @@
-import "../styles/Home.css"; // Ensure you have this CSS file
+import "../styles/pagesStyles/Home.css"; 
+import "../App.css";
 import gapsnap_introduction from  '../images/group_image.jpeg'
 
 const Home = () => {

@@ -1,0 +1,33 @@
+.report-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+/* Main title */
+.report-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Student + Assessment lines */
+.report-field {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Section headers */
+.report-section-title {
+  font-size: 1.6rem; 
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Body text */
+.report-section-text {
+  font-size: 1.15rem;  
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}

@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Platform from "./pages/Platform";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Platform from "./pages/Platform.jsx";
+import Playground from "./pages/Playground.jsx";
+import VideoPitch from "./pages/VideoPitch.jsx";
 import './App.css';
 
 const App = () => {
@@ -10,18 +12,15 @@ const App = () => {
     <Router>
       <div className="App">
       <NavBar /> 
-        <header className="App-header">
-        {/*<Link to="/" style={{ display: 'block' }}>
-          <div className="Logo-wrapper">
-            <img src={logo} alt="Club Logo" className="App-logo" />
-          </div>*
-        </Link>*/}
-        </header>
-        
-         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/platform" element={<Platform />} />
-        </Routes>
+
+        <header className="App-header"> </header>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/platform" element={<Platform />} />
+            <Route path="/playground" element={<Playground />} />
+            <Route path="/assessment" element={<VideoPitch />} />
+          </Routes>
+
         <Footer />
       </div>
     </Router>

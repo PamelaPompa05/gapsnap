@@ -1,4 +1,4 @@
-import "../styles/Footer.css"; // Ensure you have this CSS file
+import "../styles/componentsStyles/Footer.css"; // Ensure you have this CSS file
 
 /*To import images later: import discordIcon from '../images/discord-icon.png';*/
 /*This is to add images later:
@@ -13,7 +13,6 @@ const Footer = () => {
         <footer style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 5px', backgroundColor: '#FFCC33', color: '#000000'}}>
             {/* Left side - Copyright */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: '50px' }}>
-                {/*<img src={CSDavis_logo} alt="Color Stack Logo" style={{ width: '140px', height: 'auto', marginBottom: '0px'}} />*/}
                 <p style={{ fontSize: '14px', textAlign: 'center', marginTop: '0px', marginBottom: '0px' }}>© 2026 GapSnap.</p>
             </div>
 
