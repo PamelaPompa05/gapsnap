@@ -3,28 +3,31 @@ import { MathfieldElement } from "mathlive";
 
 export default function MathInput({ onChange }) {
   const mfRef = useRef(null);
+  const onChangeRef = useRef(onChange);
 
-    useEffect(() => {
-        // Prevent duplicate mathfields
-        if (mfRef.current.childElementCount === 0) {
-            const mf = new MathfieldElement();
+  // Keep ref updated without triggering effects
+  onChangeRef.current = onChange;
 
-            mf.setOptions({
-            virtualKeyboardMode: "onfocus",
-            smartMode: true,
-            mathModeSpace: "on",
-            keypressSound: null,
-            plonkSound: null,
-            menuItems: [],
-            });
+  useEffect(() => {
+    if (mfRef.current.childElementCount === 0) {
+      const mf = new MathfieldElement();
 
-            mfRef.current.appendChild(mf);
+      mf.setOptions({
+        virtualKeyboardMode: "onfocus",
+        smartMode: true,
+        mathModeSpace: "on",
+        keypressSound: null,
+        plonkSound: null,
+        menuItems: [],
+      });
 
-            mf.addEventListener("input", () => {
-            onChange(mf.getValue());
-            });
-        }
-    }, []);
+      mfRef.current.appendChild(mf);
+
+      mf.addEventListener("input", () => {
+        onChangeRef.current(mf.getValue());
+      });
+    }
+  }, []);
 
   return <div ref={mfRef}></div>;
 }
