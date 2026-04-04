@@ -1,11 +1,11 @@
-import "../styles/pagesStyles/TeacherSummaryScreen.css";
+import "../styles/pagesStyles/LearnerSummaryScreen.css";
 import "../App.css";
 
-export default function TeacherSummaryScreen({ onNext }) {
+export default function LearnerSummaryScreen({ onNext }) {
   return (
     <div className="page">
         <div className="report-container" style={{ marginTop: "90px" }}>
-            <h2 className="report-title">Teacher Summary</h2>
+            <h2 className="report-title">Learner Summary</h2>
 
             <p className="report-field"><b>Student:</b> Jordan M.</p>
             <p className="report-field"><b>Assessment:</b> The Case of the Missing Mascot</p>

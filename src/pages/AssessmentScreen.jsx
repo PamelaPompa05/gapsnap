@@ -62,7 +62,7 @@ export default function AssessmentScreen({ onNext }) {
       <div className="banner-container bottom-section">
         <div className="banner-inner">
           <button className="btn-primary" onClick={onNext}>
-            View Teacher Summary Screen
+            View Learner Summary Screen
           </button>
         </div>
       </div>
